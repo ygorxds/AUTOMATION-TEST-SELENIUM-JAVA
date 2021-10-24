@@ -1,0 +1,419 @@
+[
+  {
+    "line": 6,
+    "elements": [
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que o usuario esteja na pagina de login",
+            "match": {
+              "location": "helloselenium.steps.LoginSteps.queOUsuarioEstejaNaPaginaDeLogin()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "o usuario inputar as credenciais na pagina",
+            "match": {
+              "location": "helloselenium.steps.LoginSteps.oUsuarioInputarAsCredenciaisNaPagina(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "usuario",
+                  "senha"
+                ]
+              },
+              {
+                "cells": [
+                  "Admin",
+                  "admin123"
+                ]
+              }
+            ],
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-22T00:14:15.743Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "helloselenium.steps.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Cadastrar Nacionalidade",
+        "description": "",
+        "id": "nacionalities;cadastrar-nacionalidade",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "helloselenium.steps.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "que o usuario esteja na pagina Nacionalities",
+            "match": {
+              "location": "helloselenium.steps.NacionalitiesSteps.queOUsuarioEstejaNaPaginaNacionalities()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "a nacionalitie \"Brasileira\" nao exista",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Brasileira\"",
+                  "offset": 15
+                }
+              ],
+              "location": "helloselenium.steps.NacionalitiesSteps.aNacionalitieNaoExista(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "adicionar a nacionalitie \"Brasileira\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Brasileira\"",
+                  "offset": 25
+                }
+              ],
+              "location": "helloselenium.steps.NacionalitiesSteps.adicionarANacionalitie(java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "a nacionalidade sera exibida na lista",
+            "match": {
+              "location": "helloselenium.steps.NacionalitiesSteps.aNacionalidadeSeraExibidaNaLista()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Nacionalities"
+          },
+          {
+            "name": "@Regressivo"
+          },
+          {
+            "name": "@IncluirNacionalidade"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que o usuario esteja na pagina de login",
+            "match": {
+              "location": "helloselenium.steps.LoginSteps.queOUsuarioEstejaNaPaginaDeLogin()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "o usuario inputar as credenciais na pagina",
+            "match": {
+              "location": "helloselenium.steps.LoginSteps.oUsuarioInputarAsCredenciaisNaPagina(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "usuario",
+                  "senha"
+                ]
+              },
+              {
+                "cells": [
+                  "Admin",
+                  "admin123"
+                ]
+              }
+            ],
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-22T00:14:15.867Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "helloselenium.steps.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Cadastrar Nacionalidade j� cadastrada",
+        "description": "",
+        "id": "nacionalities;cadastrar-nacionalidade-j�-cadastrada",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "helloselenium.steps.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "que o usuario esteja na pagina Nacionalities",
+            "match": {
+              "location": "helloselenium.steps.NacionalitiesSteps.queOUsuarioEstejaNaPaginaNacionalities()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "adicionar a nacionalitie \"Brasileira\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Brasileira\"",
+                  "offset": 25
+                }
+              ],
+              "location": "helloselenium.steps.NacionalitiesSteps.adicionarANacionalitie(java.lang.String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "exibira a mensagem para a nacionalitie \"Already exists\"",
+            "match": {},
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Nacionalities"
+          },
+          {
+            "name": "@Regressivo"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que o usuario esteja na pagina de login",
+            "match": {
+              "location": "helloselenium.steps.LoginSteps.queOUsuarioEstejaNaPaginaDeLogin()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "o usuario inputar as credenciais na pagina",
+            "match": {
+              "location": "helloselenium.steps.LoginSteps.oUsuarioInputarAsCredenciaisNaPagina(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "usuario",
+                  "senha"
+                ]
+              },
+              {
+                "cells": [
+                  "Admin",
+                  "admin123"
+                ]
+              }
+            ],
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-22T00:14:15.882Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "helloselenium.steps.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Excluir Nacionalitie",
+        "description": "",
+        "id": "nacionalities;excluir-nacionalitie",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "helloselenium.steps.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "que o usuario esteja na pagina Nacionalities",
+            "match": {
+              "location": "helloselenium.steps.NacionalitiesSteps.queOUsuarioEstejaNaPaginaNacionalities()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "a nacionalitie \"Brasileira\" nao exista",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Brasileira\"",
+                  "offset": 15
+                }
+              ],
+              "location": "helloselenium.steps.NacionalitiesSteps.aNacionalitieNaoExista(java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "exibira a mensagem para a nacionalitie \"Already exists\"",
+            "match": {},
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Nacionalities"
+          },
+          {
+            "name": "@Regressivo"
+          }
+        ]
+      }
+    ],
+    "name": "Nacionalities",
+    "description": "",
+    "id": "nacionalities",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/Nacionalities.feature",
+    "tags": [
+      {
+        "name": "@Nacionalities",
+        "type": "Tag",
+        "location": {
+          "line": 5,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Regressivo",
+        "type": "Tag",
+        "location": {
+          "line": 5,
+          "column": 16
+        }
+      }
+    ]
+  }
+]
